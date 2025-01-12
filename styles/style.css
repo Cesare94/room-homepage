@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    font-family: "League Spartan", serif;
+}
+
+body {
+    max-width: 1440px;
+    display: grid;
+    grid-template-areas: 'nav nav aside'
+                         'dark main light';
+                        overflow-x: hidden;
+                      
+    
+                     
+}
+
+nav {
+    grid-area: nav;
+    display: block;
+    background-image: url('../images/desktop-image-hero-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 800px;
+    
+    
+    
+    
+ 
+}
+
+nav .hamburger {
+    display: none;
+}
+
+.nav-box {
+    display: flex;
+    
+}
+
+nav h2 {
+    padding-left: 5%;
+    padding-bottom: 25%;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 25px;
+    padding-bottom: 80%;
+    
+   
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+   
+    
+   
+    
+}
+
+nav ul li .close {
+    display: none;
+}
+
+
+aside {
+    grid-area: aside;
+    padding: 10%;
+    width: 510px;
+    height: 509px;
+    position: relative;
+    right: 110px;
+   
+    
+}
+
+aside h1 {
+    font-size: 44px;
+}
+
+aside p {
+    font-size: 15px;
+    width: 320px;
+    color: hsl(0, 0%, 63%);
+    line-height: 18px;
+    
+    
+    
+}
+
+aside span {
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+}
+
+aside img {
+    position: relative;
+    top: 20px;
+}
+
+aside .btn {
+    position: relative;
+    right: 51px;
+    top: 110px;
+    display: flex;
+    
+    
+}
+
+aside .prev {
+    padding: 27.5px;
+    background-image: url('../images/icon-angle-left.svg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+
+aside .next {
+    padding: 27.5px;
+    background-image: url('../images/icon-angle-right.svg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.dark {
+    grid: dark;
+    width: 100%;
+    position: relative;
+    bottom: 188px;
+    display: block;
+    
+}
+
+main {
+    grid-area: main;
+    position: relative;
+    bottom: 188px;
+    width: 490px;
+    height: 266px;
+    padding: 10%;
+}
+
+main h3 {
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-size: 15px;
+}
+
+main p {
+    font-size: 14px;
+    margin-top: 25px;
+    color: hsl(0, 0%, 63%);
+    line-height: 21px;
+}
+
+.light {
+    grid-area: light;
+    position: relative;
+    bottom: 188px;
+}
+
+.light img {
+   width: 400px;
+   height: 270px;
+}
+
+@media screen and ( max-width: 978px) {
+    body {
+        display: grid;
+        grid-template-areas: 'nav'
+                             'aside'
+                             'dark'
+                             'main' 
+                            'light';
+        margin: 0 auto;
+                            
+                          
+    }
+
+    nav {
+        grid-area: nav;
+        background-image: url('../images/mobile-image-hero-1.jpg');
+        width: 960px;
+    }
+    
+
+    nav img {
+        position: relative;
+        top: 37px;
+        left: 20px;
+        cursor: pointer;
+        
+    }
+
+    nav .hamburger {
+        display: block;
+    }
+    
+    nav h2 {
+        padding-left: 20%;
+ 
+        
+    }
+    
+    nav ul {
+        display: none;
+        padding-bottom: 0%;
+        position: relative;
+        right: 300px;
+        bottom: 40px;
+        background-color: white;
+        height: 100px;
+        width: 551px;
+       
+        
+        
+       
+      
+        
+    }
+
+
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding-left: 30px;
+        font-size: 18px;
+        color: black;
+        position: relative;
+        left: 130px;
+        top: 20px;
+         
+        
+    }
+
+
+    nav ul li a:hover{
+       color: red;
+       
+    }
+
+    nav ul li .close {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+    }
+
+  
+
+    aside {
+        grid-area: aside;
+        margin: 0 auto;
+        padding: 0;
+        width: 400px;
+        position: relative;
+        right: 200px;
+        top: 20px;
+       
+        
+    }
+    
+    aside h1 {
+        font-size: 44px;
+        padding-right: 5%;
+    }
+    
+    aside p {
+        font-size: 15px;
+        width: 310px;
+        color: hsl(0, 0%, 63%);
+        line-height: 18px;
+        padding-left: 10%;
+       
+   
+        
+    }
+    
+    aside span {
+        letter-spacing: 18px;
+        text-transform: uppercase;
+        position: relative;
+        top: 10px;
+    }
+    
+    aside img {
+        position: relative;
+        top: 10px;
+    }
+    
+    aside .btn {
+        position: absolute;
+        left: 306px;
+        top: -75px;
+        
+        
+        
+        
+    }
+
+    .dark {
+        grid: dark;
+        left: 25px;
+        position: relative;
+        bottom: 130px;
+        display: block;
+        
+        
+    }
+    
+    main {
+        grid-area: main;
+        position: relative;
+        bottom: 195px;
+        width: 600px;
+        height: 266px;
+        padding-left: 25px;
+    }
+    
+    
+    main p {
+        font-size: 14px;
+        margin-top: 25px;
+        color: hsl(0, 0%, 63%);
+        line-height: 21px;
+        width: 400px;
+        
+    }
+    
+    .light {
+        grid-area: light;
+        position: relative;
+        bottom: 168px;
+        left: 25px;
+    }
+    
+ 
+    
+
+
+
+
+}
